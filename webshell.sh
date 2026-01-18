@@ -11,7 +11,6 @@ while [ "$command" != "y" ]; do
     break
   fi
 
-  #output=$(curl -s "$url?cmd=$command" | strings)
   output=$(curl -sG --data-urlencode "cmd=$command" "$url" | strings) 
   echo "$output"
   echo
