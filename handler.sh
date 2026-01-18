@@ -2,9 +2,7 @@
 
 read -p "Enter URL: " url
 echo
-command=""
-
-while [ "$command" != "q" ]; do
+while true; do
   read -p "Enter command (q to exit) >" command
 
   if [ "$command" = "q" ]; then
