@@ -4,10 +4,10 @@ read -p "Enter URL: " url
 echo
 command=""
 
-while [ "$command" != "y" ]; do
-  read -p "Enter command (y to exit):" command
+while [ "$command" != "q" ]; do
+  read -p "Enter command (q to exit) >" command
 
-  if [ "$command" = "y" ]; then
+  if [ "$command" = "q" ]; then
     break
   fi
 
