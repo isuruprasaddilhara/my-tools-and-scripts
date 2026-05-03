@@ -1,0 +1,4 @@
+ls /sys/class/leds
+output: input1::capslock  input1::numlock  input1::scrolllock
+
+sudo sh -c 'echo 1 > /sys/class/leds/input1::scrolllock/brightness'
